@@ -1,0 +1,2579 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_f042eb1cc32a45fdb4544e8cc91b6aa7 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_f042eb1cc32a45fdb4544e8cc91b6aa7" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_f042eb1cc32a45fdb4544e8cc91b6aa7 = L.map(
+        'map_f042eb1cc32a45fdb4544e8cc91b6aa7', {
+        center: [23.5, 121],
+        zoom: 7,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_0a956dc797034877bb80bee41dc2e9e4 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_f042eb1cc32a45fdb4544e8cc91b6aa7);
+    
+            var marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b = L.markerClusterGroup({});
+            map_f042eb1cc32a45fdb4544e8cc91b6aa7.addLayer(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+            
+    
+        var marker_0b82e0ac8b1049a0950e9870f83bb9c0 = L.marker(
+            [23.74, 121.9],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_f5a6bf056e0d491b8b5b56f465693894 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0705c3e928764168adb0dcfde9e20c06 = $(`<div id="html_0705c3e928764168adb0dcfde9e20c06" style="width: 100.0%; height: 100.0%;">2018/12/16 上午 05:21:00<br>5.6<br>花蓮縣政府東南方  40.0  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_f5a6bf056e0d491b8b5b56f465693894.setContent(html_0705c3e928764168adb0dcfde9e20c06);
+            
+
+            marker_0b82e0ac8b1049a0950e9870f83bb9c0.bindPopup(popup_f5a6bf056e0d491b8b5b56f465693894)
+            ;
+
+            
+        
+    
+        var marker_a61bb5b505c64fdba34c472ca057a39f = L.marker(
+            [23.91, 121.53],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_9a4907299dcc446b8e4fb6639101e880 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c448b22958f348bcae99a904c8bd1058 = $(`<div id="html_c448b22958f348bcae99a904c8bd1058" style="width: 100.0%; height: 100.0%;">2018/12/12 下午 09:24:00<br>4.9<br>花蓮縣政府西南方  13.3  公里 (位於花蓮縣壽豐鄉)</div>`)[0];
+                popup_9a4907299dcc446b8e4fb6639101e880.setContent(html_c448b22958f348bcae99a904c8bd1058);
+            
+
+            marker_a61bb5b505c64fdba34c472ca057a39f.bindPopup(popup_9a4907299dcc446b8e4fb6639101e880)
+            ;
+
+            
+        
+    
+        var marker_76aeba430f114169bd7e208863265c87 = L.marker(
+            [24.05, 121.53],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_cd02e08d124d44b3a0c36c3ad21db10b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_677858f5e67b4f2c883c6f1cb0248f66 = $(`<div id="html_677858f5e67b4f2c883c6f1cb0248f66" style="width: 100.0%; height: 100.0%;">2018/12/9 下午 11:15:00<br>5.1<br>花蓮縣政府西偏北方  11.7  公里 (位於花蓮縣秀林鄉)</div>`)[0];
+                popup_cd02e08d124d44b3a0c36c3ad21db10b.setContent(html_677858f5e67b4f2c883c6f1cb0248f66);
+            
+
+            marker_76aeba430f114169bd7e208863265c87.bindPopup(popup_cd02e08d124d44b3a0c36c3ad21db10b)
+            ;
+
+            
+        
+    
+        var marker_485468f5b804476688992d453e5581f5 = L.marker(
+            [23.37, 118.62],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_bebb03f5dae44010b8461f1d6e7aa206 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2fee6251c70c45c4b8749d77a5286ab1 = $(`<div id="html_2fee6251c70c45c4b8749d77a5286ab1" style="width: 100.0%; height: 100.0%;">2018/11/27 下午 06:29:00<br>4.9<br>澎湖縣政府西偏南方  98.8  公里 (位於臺灣西部海域)</div>`)[0];
+                popup_bebb03f5dae44010b8461f1d6e7aa206.setContent(html_2fee6251c70c45c4b8749d77a5286ab1);
+            
+
+            marker_485468f5b804476688992d453e5581f5.bindPopup(popup_bebb03f5dae44010b8461f1d6e7aa206)
+            ;
+
+            
+        
+    
+        var marker_854d683a4c3242678369c05c37740160 = L.marker(
+            [23.38, 118.61],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_44100e0df383494c99843b4c174c08b7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_929bc579af324ecc8f7ed4947ba77340 = $(`<div id="html_929bc579af324ecc8f7ed4947ba77340" style="width: 100.0%; height: 100.0%;">2018/11/26 下午 09:24:00<br>4.6<br>澎湖縣政府西偏南方  100.3  公里 (位於臺灣西部海域)</div>`)[0];
+                popup_44100e0df383494c99843b4c174c08b7.setContent(html_929bc579af324ecc8f7ed4947ba77340);
+            
+
+            marker_854d683a4c3242678369c05c37740160.bindPopup(popup_44100e0df383494c99843b4c174c08b7)
+            ;
+
+            
+        
+    
+        var marker_a6aedc2271024140ac688f5aa0b3b42a = L.marker(
+            [23.36, 118.6],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_2c6b76d3b20846eb986555d16b8d400e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e2a6ecd1796541f3927b98d783efd5d4 = $(`<div id="html_e2a6ecd1796541f3927b98d783efd5d4" style="width: 100.0%; height: 100.0%;">2018/11/26 下午 08:50:00<br>4.9<br>澎湖縣政府西偏南方  101.2  公里 (位於臺灣西部海域)</div>`)[0];
+                popup_2c6b76d3b20846eb986555d16b8d400e.setContent(html_e2a6ecd1796541f3927b98d783efd5d4);
+            
+
+            marker_a6aedc2271024140ac688f5aa0b3b42a.bindPopup(popup_2c6b76d3b20846eb986555d16b8d400e)
+            ;
+
+            
+        
+    
+        var marker_a65771bc78e74c5c8d9e48558bf67e02 = L.marker(
+            [23.34, 118.57],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_ea345f21ff624f8baf7fa9c6c0c7bf58 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_775c15c0760b49a1a86e3415df0b41af = $(`<div id="html_775c15c0760b49a1a86e3415df0b41af" style="width: 100.0%; height: 100.0%;">2018/11/26 上午 08:15:00<br>4.7<br>澎湖縣政府西偏南方  104.6  公里 (位於臺灣西部海域)</div>`)[0];
+                popup_ea345f21ff624f8baf7fa9c6c0c7bf58.setContent(html_775c15c0760b49a1a86e3415df0b41af);
+            
+
+            marker_a65771bc78e74c5c8d9e48558bf67e02.bindPopup(popup_ea345f21ff624f8baf7fa9c6c0c7bf58)
+            ;
+
+            
+        
+    
+        var marker_9d64c784384f4052bd4133e12abb9e5a = L.marker(
+            [23.38, 118.52],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_3dbcdf4de4404c6db79cd70fcbe1dc0d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f314a1751f034121a817e619b6276d6f = $(`<div id="html_f314a1751f034121a817e619b6276d6f" style="width: 100.0%; height: 100.0%;">2018/11/26 上午 07:57:00<br>6.2<br>澎湖縣政府西方  108.4  公里 (位於臺灣西部海域)</div>`)[0];
+                popup_3dbcdf4de4404c6db79cd70fcbe1dc0d.setContent(html_f314a1751f034121a817e619b6276d6f);
+            
+
+            marker_9d64c784384f4052bd4133e12abb9e5a.bindPopup(popup_3dbcdf4de4404c6db79cd70fcbe1dc0d)
+            ;
+
+            
+        
+    
+        var marker_949dd4f574b541508f1d266c8a809b13 = L.marker(
+            [24.41, 121.92],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_fc452d9215824a44ae0c0a6d5d7862f2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b9a3a7c52046410aae3accfafdd96c5c = $(`<div id="html_b9a3a7c52046410aae3accfafdd96c5c" style="width: 100.0%; height: 100.0%;">2018/11/20 上午 12:31:00<br>4.7<br>宜蘭縣政府南偏東方  38.9  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_fc452d9215824a44ae0c0a6d5d7862f2.setContent(html_b9a3a7c52046410aae3accfafdd96c5c);
+            
+
+            marker_949dd4f574b541508f1d266c8a809b13.bindPopup(popup_fc452d9215824a44ae0c0a6d5d7862f2)
+            ;
+
+            
+        
+    
+        var marker_3ab7ea6e8b20461cad6aa06e196757a3 = L.marker(
+            [24.35, 121.94],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_53de4c83d73a4404921f308832a77910 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5bc9f5391f3f42d7ab71f5f65ef66cbb = $(`<div id="html_5bc9f5391f3f42d7ab71f5f65ef66cbb" style="width: 100.0%; height: 100.0%;">2018/11/19 下午 10:40:00<br>4.5<br>宜蘭縣政府南偏東方  45.8  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_53de4c83d73a4404921f308832a77910.setContent(html_5bc9f5391f3f42d7ab71f5f65ef66cbb);
+            
+
+            marker_3ab7ea6e8b20461cad6aa06e196757a3.bindPopup(popup_53de4c83d73a4404921f308832a77910)
+            ;
+
+            
+        
+    
+        var marker_a86c7fa1c52b4496ac4f806154ef1a5a = L.marker(
+            [23.95, 122.47],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_336f4289b53244eb8a57da7eeb3d4313 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4c790cc6fc464cdb925c16e70fc668e1 = $(`<div id="html_4c790cc6fc464cdb925c16e70fc668e1" style="width: 100.0%; height: 100.0%;">2018/11/19 下午 02:19:00<br>5.0<br>花蓮縣政府東方  86.4  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_336f4289b53244eb8a57da7eeb3d4313.setContent(html_4c790cc6fc464cdb925c16e70fc668e1);
+            
+
+            marker_a86c7fa1c52b4496ac4f806154ef1a5a.bindPopup(popup_336f4289b53244eb8a57da7eeb3d4313)
+            ;
+
+            
+        
+    
+        var marker_7bbddaf0664545caaabad01a5e057e39 = L.marker(
+            [24.31, 122.69],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_3cc95dceb0ba4ef08531fac38dfdd739 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c66f8cce1aa94596baf02441711611ec = $(`<div id="html_c66f8cce1aa94596baf02441711611ec" style="width: 100.0%; height: 100.0%;">2018/11/16 上午 08:34:00<br>4.9<br>宜蘭縣政府東偏南方  104.5  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_3cc95dceb0ba4ef08531fac38dfdd739.setContent(html_c66f8cce1aa94596baf02441711611ec);
+            
+
+            marker_7bbddaf0664545caaabad01a5e057e39.bindPopup(popup_3cc95dceb0ba4ef08531fac38dfdd739)
+            ;
+
+            
+        
+    
+        var marker_c7414f7c9de6472c8730c9cc4350844b = L.marker(
+            [24.0, 122.69],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_1687849651c446ce834a857cff3743dc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1d1d5543d80b42f3b00bf3e7c54aa506 = $(`<div id="html_1d1d5543d80b42f3b00bf3e7c54aa506" style="width: 100.0%; height: 100.0%;">2018/11/9 上午 05:28:00<br>4.5<br>花蓮縣政府東方  108.9  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_1687849651c446ce834a857cff3743dc.setContent(html_1d1d5543d80b42f3b00bf3e7c54aa506);
+            
+
+            marker_c7414f7c9de6472c8730c9cc4350844b.bindPopup(popup_1687849651c446ce834a857cff3743dc)
+            ;
+
+            
+        
+    
+        var marker_d51bfbe5afaf427482b6448e8ac00b03 = L.marker(
+            [22.78, 122.57],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_d734b16a87aa4d3d93eae6d727b04c11 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_587024e0b6274e93b5b4badcb66cf1f3 = $(`<div id="html_587024e0b6274e93b5b4badcb66cf1f3" style="width: 100.0%; height: 100.0%;">2018/11/8 上午 05:05:00<br>5.3<br>臺東縣政府東方  145.8  公里 (位於臺灣東南部海域)</div>`)[0];
+                popup_d734b16a87aa4d3d93eae6d727b04c11.setContent(html_587024e0b6274e93b5b4badcb66cf1f3);
+            
+
+            marker_d51bfbe5afaf427482b6448e8ac00b03.bindPopup(popup_d734b16a87aa4d3d93eae6d727b04c11)
+            ;
+
+            
+        
+    
+        var marker_ce7724fb9c2f4153af74c085c7a7d042 = L.marker(
+            [23.99, 122.63],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_e48b2a7419194fc8b28f325197121c36 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b92a6ebb829f4ddb9620923937e91d9b = $(`<div id="html_b92a6ebb829f4ddb9620923937e91d9b" style="width: 100.0%; height: 100.0%;">2018/10/24 上午 12:04:00<br>5.9<br>花蓮縣政府東方  102.8  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_e48b2a7419194fc8b28f325197121c36.setContent(html_b92a6ebb829f4ddb9620923937e91d9b);
+            
+
+            marker_ce7724fb9c2f4153af74c085c7a7d042.bindPopup(popup_e48b2a7419194fc8b28f325197121c36)
+            ;
+
+            
+        
+    
+        var marker_58b4356695e54732afab74fe0b477bce = L.marker(
+            [24.0, 122.62],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_7c58c84255964eb2b73b8113eb422df8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_620330cbb8044c01a3a5a0f25e4cc38d = $(`<div id="html_620330cbb8044c01a3a5a0f25e4cc38d" style="width: 100.0%; height: 100.0%;">2018/10/23 下午 12:34:00<br>6.1<br>花蓮縣政府東方  102.2  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_7c58c84255964eb2b73b8113eb422df8.setContent(html_620330cbb8044c01a3a5a0f25e4cc38d);
+            
+
+            marker_58b4356695e54732afab74fe0b477bce.bindPopup(popup_7c58c84255964eb2b73b8113eb422df8)
+            ;
+
+            
+        
+    
+        var marker_caf2ff3d5abc49d5b00eeb02898cb364 = L.marker(
+            [24.91, 122.04],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_5339a59a17a84719834cd96ad90e21cc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_38e26d0af171421fbdf946f01bb32139 = $(`<div id="html_38e26d0af171421fbdf946f01bb32139" style="width: 100.0%; height: 100.0%;">2018/10/10 下午 05:43:00<br>4.5<br>宜蘭縣政府東偏北方  34.2  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_5339a59a17a84719834cd96ad90e21cc.setContent(html_38e26d0af171421fbdf946f01bb32139);
+            
+
+            marker_caf2ff3d5abc49d5b00eeb02898cb364.bindPopup(popup_5339a59a17a84719834cd96ad90e21cc)
+            ;
+
+            
+        
+    
+        var marker_279e6077f16147cc8ee00de67bdfa04a = L.marker(
+            [22.92, 121.38],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_32b9edb9b4714035aef157a6bc23be05 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_34c4bf4856f14aad8ebc33721047b2ed = $(`<div id="html_34c4bf4856f14aad8ebc33721047b2ed" style="width: 100.0%; height: 100.0%;">2018/10/9 下午 04:12:00<br>4.6<br>臺東縣政府東北方  29.1  公里 (位於臺灣東南部海域)</div>`)[0];
+                popup_32b9edb9b4714035aef157a6bc23be05.setContent(html_34c4bf4856f14aad8ebc33721047b2ed);
+            
+
+            marker_279e6077f16147cc8ee00de67bdfa04a.bindPopup(popup_32b9edb9b4714035aef157a6bc23be05)
+            ;
+
+            
+        
+    
+        var marker_f4ab7919046049af89021391fabc68f4 = L.marker(
+            [22.12, 120.47],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_6548096ff4ed4820a89eeeac51fb10e1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_61e148ea68774eeda0613df371939342 = $(`<div id="html_61e148ea68774eeda0613df371939342" style="width: 100.0%; height: 100.0%;">2018/10/4 下午 02:17:00<br>4.6<br>高雄市政府南偏東方  57.9  公里 (位於臺灣西南部海域)</div>`)[0];
+                popup_6548096ff4ed4820a89eeeac51fb10e1.setContent(html_61e148ea68774eeda0613df371939342);
+            
+
+            marker_f4ab7919046049af89021391fabc68f4.bindPopup(popup_6548096ff4ed4820a89eeeac51fb10e1)
+            ;
+
+            
+        
+    
+        var marker_202f4597d42943f6928b7fe42ba77fa9 = L.marker(
+            [24.04, 122.26],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_8c26da0702f2414aaad7256b011debca = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dfbcf021de884004945647788664f314 = $(`<div id="html_dfbcf021de884004945647788664f314" style="width: 100.0%; height: 100.0%;">2018/9/12 上午 05:20:00<br>4.6<br>花蓮縣政府東方  65.2  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_8c26da0702f2414aaad7256b011debca.setContent(html_dfbcf021de884004945647788664f314);
+            
+
+            marker_202f4597d42943f6928b7fe42ba77fa9.bindPopup(popup_8c26da0702f2414aaad7256b011debca)
+            ;
+
+            
+        
+    
+        var marker_087a1ff317d84e57a5415ac48772a7bc = L.marker(
+            [23.87, 121.52],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_eef9c146d0ee403690bff7507285d5e2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_35b6b8129bed4f649a51da5d3a7335fd = $(`<div id="html_35b6b8129bed4f649a51da5d3a7335fd" style="width: 100.0%; height: 100.0%;">2018/9/11 下午 12:43:00<br>4.5<br>花蓮縣政府西南方  16.4  公里 (位於花蓮縣壽豐鄉)</div>`)[0];
+                popup_eef9c146d0ee403690bff7507285d5e2.setContent(html_35b6b8129bed4f649a51da5d3a7335fd);
+            
+
+            marker_087a1ff317d84e57a5415ac48772a7bc.bindPopup(popup_eef9c146d0ee403690bff7507285d5e2)
+            ;
+
+            
+        
+    
+        var marker_78526c6b14f348cc83443b6e8b36cbe9 = L.marker(
+            [23.93, 121.61],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_037d1af8ddad4174961d0ccfbe92058b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7b6d65b4039d4e80bdadf99c05d74a81 = $(`<div id="html_7b6d65b4039d4e80bdadf99c05d74a81" style="width: 100.0%; height: 100.0%;">2018/9/9 下午 09:16:00<br>4.6<br>花蓮縣政府南方  6.3  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_037d1af8ddad4174961d0ccfbe92058b.setContent(html_7b6d65b4039d4e80bdadf99c05d74a81);
+            
+
+            marker_78526c6b14f348cc83443b6e8b36cbe9.bindPopup(popup_037d1af8ddad4174961d0ccfbe92058b)
+            ;
+
+            
+        
+    
+        var marker_ac351d40dd50456ab32b24051b0445db = L.marker(
+            [24.72, 122.31],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_f608efa435bf4cb6aa6e35969065e652 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_160255fcba274f03b6b6442302dcb9a6 = $(`<div id="html_160255fcba274f03b6b6442302dcb9a6" style="width: 100.0%; height: 100.0%;">2018/8/31 上午 04:14:00<br>4.6<br>宜蘭縣政府東方  55.6  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_f608efa435bf4cb6aa6e35969065e652.setContent(html_160255fcba274f03b6b6442302dcb9a6);
+            
+
+            marker_ac351d40dd50456ab32b24051b0445db.bindPopup(popup_f608efa435bf4cb6aa6e35969065e652)
+            ;
+
+            
+        
+    
+        var marker_0d5f3dde93604891aa64122931d608a7 = L.marker(
+            [24.82, 122.41],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_0bf11eb7b22943999791f51efa5adf6d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b6cbbc46177c4711817ae80b7ff56701 = $(`<div id="html_b6cbbc46177c4711817ae80b7ff56701" style="width: 100.0%; height: 100.0%;">2018/8/30 上午 03:53:00<br>4.5<br>宜蘭縣政府東方  66.0  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_0bf11eb7b22943999791f51efa5adf6d.setContent(html_b6cbbc46177c4711817ae80b7ff56701);
+            
+
+            marker_0d5f3dde93604891aa64122931d608a7.bindPopup(popup_0bf11eb7b22943999791f51efa5adf6d)
+            ;
+
+            
+        
+    
+        var marker_ce19d313144340c7988091393893d31a = L.marker(
+            [24.02, 121.0],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_f6c44afd084b4052ae94b18b9e928489 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4d9a4110663f436ba55819317d0e35e8 = $(`<div id="html_4d9a4110663f436ba55819317d0e35e8" style="width: 100.0%; height: 100.0%;">2018/8/18 上午 08:15:00<br>5.1<br>南投縣政府東偏北方  34.4  公里 (位於南投縣仁愛鄉)</div>`)[0];
+                popup_f6c44afd084b4052ae94b18b9e928489.setContent(html_4d9a4110663f436ba55819317d0e35e8);
+            
+
+            marker_ce19d313144340c7988091393893d31a.bindPopup(popup_f6c44afd084b4052ae94b18b9e928489)
+            ;
+
+            
+        
+    
+        var marker_6ce6ba9af3834ea0a00d2b4831bc1107 = L.marker(
+            [24.01, 121.01],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_73b9f94dc3b84ee492ae5fa8282ad653 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_94399467697a4d2780d2b78dd0c542b5 = $(`<div id="html_94399467697a4d2780d2b78dd0c542b5" style="width: 100.0%; height: 100.0%;">2018/8/17 下午 06:09:00<br>4.9<br>南投縣政府東偏北方  35.1  公里 (位於南投縣埔里鎮)</div>`)[0];
+                popup_73b9f94dc3b84ee492ae5fa8282ad653.setContent(html_94399467697a4d2780d2b78dd0c542b5);
+            
+
+            marker_6ce6ba9af3834ea0a00d2b4831bc1107.bindPopup(popup_73b9f94dc3b84ee492ae5fa8282ad653)
+            ;
+
+            
+        
+    
+        var marker_ec73c52f3afb4c86b39afa481eda2e04 = L.marker(
+            [20.99, 120.18],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_a840e83717024c519a2eafa18d6c84ad = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2562323366574ca8a87c259bc188f692 = $(`<div id="html_2562323366574ca8a87c259bc188f692" style="width: 100.0%; height: 100.0%;">2018/8/9 下午 04:01:00<br>4.9<br>高雄市政府南方  181.6  公里 (位於臺灣南部海域)</div>`)[0];
+                popup_a840e83717024c519a2eafa18d6c84ad.setContent(html_2562323366574ca8a87c259bc188f692);
+            
+
+            marker_ec73c52f3afb4c86b39afa481eda2e04.bindPopup(popup_a840e83717024c519a2eafa18d6c84ad)
+            ;
+
+            
+        
+    
+        var marker_33e553dc1f684c2b92793bb30b04ccdb = L.marker(
+            [24.6, 122.65],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_6250ceacd35b4c8d9046a1d1f83cbe79 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d947347c585f42498270f79b22f5eb00 = $(`<div id="html_d947347c585f42498270f79b22f5eb00" style="width: 100.0%; height: 100.0%;">2018/8/6 上午 05:30:00<br>4.6<br>宜蘭縣政府東方  90.9  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_6250ceacd35b4c8d9046a1d1f83cbe79.setContent(html_d947347c585f42498270f79b22f5eb00);
+            
+
+            marker_33e553dc1f684c2b92793bb30b04ccdb.bindPopup(popup_6250ceacd35b4c8d9046a1d1f83cbe79)
+            ;
+
+            
+        
+    
+        var marker_3b965468229e4289bb3ab447bc8cc309 = L.marker(
+            [23.64, 120.7],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_6b7f02f6913b44ec9d8b1f8e7df10dcb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_aee573a12ebb48cc9c43ffaccf9d14c7 = $(`<div id="html_aee573a12ebb48cc9c43ffaccf9d14c7" style="width: 100.0%; height: 100.0%;">2018/8/2 下午 09:38:00<br>4.8<br>南投縣政府南方  29.3  公里 (位於南投縣竹山鎮)</div>`)[0];
+                popup_6b7f02f6913b44ec9d8b1f8e7df10dcb.setContent(html_aee573a12ebb48cc9c43ffaccf9d14c7);
+            
+
+            marker_3b965468229e4289bb3ab447bc8cc309.bindPopup(popup_6b7f02f6913b44ec9d8b1f8e7df10dcb)
+            ;
+
+            
+        
+    
+        var marker_989e9508c17245e5b795f2c134a04ee5 = L.marker(
+            [20.78, 121.51],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_fe6e24aa0c80402ba0f09dd8fc3192d7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_99bcb0ab3c55408981063a68a075148e = $(`<div id="html_99bcb0ab3c55408981063a68a075148e" style="width: 100.0%; height: 100.0%;">2018/7/20 上午 09:39:00<br>5.6<br>臺東縣政府南方  221.7  公里 (位於臺灣南部海域)</div>`)[0];
+                popup_fe6e24aa0c80402ba0f09dd8fc3192d7.setContent(html_99bcb0ab3c55408981063a68a075148e);
+            
+
+            marker_989e9508c17245e5b795f2c134a04ee5.bindPopup(popup_fe6e24aa0c80402ba0f09dd8fc3192d7)
+            ;
+
+            
+        
+    
+        var marker_7b173a88949e4c5abf05518bc1c26a63 = L.marker(
+            [22.99, 121.17],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_1a10d5e3d3134b57af94b0cae54f90da = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0fea36e13c124abe9f3d98b2bf1b4df0 = $(`<div id="html_0fea36e13c124abe9f3d98b2bf1b4df0" style="width: 100.0%; height: 100.0%;">2018/7/14 上午 02:38:00<br>4.8<br>臺東縣政府北方  26.5  公里 (位於臺東縣鹿野鄉)</div>`)[0];
+                popup_1a10d5e3d3134b57af94b0cae54f90da.setContent(html_0fea36e13c124abe9f3d98b2bf1b4df0);
+            
+
+            marker_7b173a88949e4c5abf05518bc1c26a63.bindPopup(popup_1a10d5e3d3134b57af94b0cae54f90da)
+            ;
+
+            
+        
+    
+        var marker_3428465e62c4492f9b7e33b8d62fcdf3 = L.marker(
+            [23.03, 120.21],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_ed4baba03de347b89044da9fe69b4965 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3b8bce96c89a42a282b5795698fdb06b = $(`<div id="html_3b8bce96c89a42a282b5795698fdb06b" style="width: 100.0%; height: 100.0%;">2018/7/11 下午 08:41:00<br>4.5<br>臺南市政府東北方  5.2  公里 (位於臺南市安南區)</div>`)[0];
+                popup_ed4baba03de347b89044da9fe69b4965.setContent(html_3b8bce96c89a42a282b5795698fdb06b);
+            
+
+            marker_3428465e62c4492f9b7e33b8d62fcdf3.bindPopup(popup_ed4baba03de347b89044da9fe69b4965)
+            ;
+
+            
+        
+    
+        var marker_9b57532a6239408dba0d7b2e7d95b613 = L.marker(
+            [23.16, 120.9],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_887a8d1454be420fa5827c057b73413d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ed27c55d389f4291b085797eb22565a0 = $(`<div id="html_ed27c55d389f4291b085797eb22565a0" style="width: 100.0%; height: 100.0%;">2018/7/3 下午 05:20:00<br>4.8<br>臺東縣政府北偏西方  51.7  公里 (位於臺東縣海端鄉)</div>`)[0];
+                popup_887a8d1454be420fa5827c057b73413d.setContent(html_ed27c55d389f4291b085797eb22565a0);
+            
+
+            marker_9b57532a6239408dba0d7b2e7d95b613.bindPopup(popup_887a8d1454be420fa5827c057b73413d)
+            ;
+
+            
+        
+    
+        var marker_2a26f070974c490f8fd2adc32ef66fb0 = L.marker(
+            [23.44, 120.48],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_b07ad27b67d04e848506ae5534a16056 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8f953f080c494b72bd5a76f6735f30a0 = $(`<div id="html_8f953f080c494b72bd5a76f6735f30a0" style="width: 100.0%; height: 100.0%;">2018/7/2 下午 03:26:00<br>4.7<br>嘉義市政府南偏東方  5.7  公里 (位於嘉義縣中埔鄉)</div>`)[0];
+                popup_b07ad27b67d04e848506ae5534a16056.setContent(html_8f953f080c494b72bd5a76f6735f30a0);
+            
+
+            marker_2a26f070974c490f8fd2adc32ef66fb0.bindPopup(popup_b07ad27b67d04e848506ae5534a16056)
+            ;
+
+            
+        
+    
+        var marker_05ca50f7aa2e4564bdbd18bf468c81c3 = L.marker(
+            [23.44, 120.48],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_6a5411e750d04de48c5bb79809adb5fe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_387502c0a7f949cab7b6336d1fd8d456 = $(`<div id="html_387502c0a7f949cab7b6336d1fd8d456" style="width: 100.0%; height: 100.0%;">2018/7/2 下午 03:26:00<br>4.5<br>嘉義市政府南偏東方  5.4  公里 (位於嘉義縣中埔鄉)</div>`)[0];
+                popup_6a5411e750d04de48c5bb79809adb5fe.setContent(html_387502c0a7f949cab7b6336d1fd8d456);
+            
+
+            marker_05ca50f7aa2e4564bdbd18bf468c81c3.bindPopup(popup_6a5411e750d04de48c5bb79809adb5fe)
+            ;
+
+            
+        
+    
+        var marker_dd249efac10e44b7a1089ab38f845fb5 = L.marker(
+            [24.07, 122.24],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_c45dd2264b5a480aa82b3c39788e2ee9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_815c2a661d9a46419838d472a589dc4c = $(`<div id="html_815c2a661d9a46419838d472a589dc4c" style="width: 100.0%; height: 100.0%;">2018/6/21 上午 03:18:00<br>4.8<br>花蓮縣政府東方  63.6  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_c45dd2264b5a480aa82b3c39788e2ee9.setContent(html_815c2a661d9a46419838d472a589dc4c);
+            
+
+            marker_dd249efac10e44b7a1089ab38f845fb5.bindPopup(popup_c45dd2264b5a480aa82b3c39788e2ee9)
+            ;
+
+            
+        
+    
+        var marker_b7a99884feca402aa8c0e435192d2f78 = L.marker(
+            [24.81, 122.63],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_a6d072438d8c46ecb281f348193e9304 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_22a0e692fd3f46abbe5a1401c0a90c6a = $(`<div id="html_22a0e692fd3f46abbe5a1401c0a90c6a" style="width: 100.0%; height: 100.0%;">2018/6/18 下午 11:06:00<br>4.7<br>宜蘭縣政府東方  87.8  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_a6d072438d8c46ecb281f348193e9304.setContent(html_22a0e692fd3f46abbe5a1401c0a90c6a);
+            
+
+            marker_b7a99884feca402aa8c0e435192d2f78.bindPopup(popup_a6d072438d8c46ecb281f348193e9304)
+            ;
+
+            
+        
+    
+        var marker_19878c069cec4e3a9ae5ea9604e82448 = L.marker(
+            [24.67, 121.84],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_066d7bde9e014af199794cc864c8eabe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b1290526894e491fbfd243ebdf163141 = $(`<div id="html_b1290526894e491fbfd243ebdf163141" style="width: 100.0%; height: 100.0%;">2018/6/16 上午 04:53:00<br>5.3<br>宜蘭縣政府東南方  10.3  公里 (位於宜蘭縣近海)</div>`)[0];
+                popup_066d7bde9e014af199794cc864c8eabe.setContent(html_b1290526894e491fbfd243ebdf163141);
+            
+
+            marker_19878c069cec4e3a9ae5ea9604e82448.bindPopup(popup_066d7bde9e014af199794cc864c8eabe)
+            ;
+
+            
+        
+    
+        var marker_c1112679ca5d43b2aab6fd14475bb638 = L.marker(
+            [23.98, 121.76],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_788055b331524804b88787ad536b067a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a370d47b60e143218bcbdc6a0a4fabd4 = $(`<div id="html_a370d47b60e143218bcbdc6a0a4fabd4" style="width: 100.0%; height: 100.0%;">2018/6/12 上午 04:52:00<br>4.6<br>花蓮縣政府東方  14.4  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_788055b331524804b88787ad536b067a.setContent(html_a370d47b60e143218bcbdc6a0a4fabd4);
+            
+
+            marker_c1112679ca5d43b2aab6fd14475bb638.bindPopup(popup_788055b331524804b88787ad536b067a)
+            ;
+
+            
+        
+    
+        var marker_59fdd41e402e4c17bad7014508f09ea0 = L.marker(
+            [23.98, 121.75],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_f580b061cf764b0d83d8dce9e55b90a8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dfb8f816b612484e972992c2b7fc1d43 = $(`<div id="html_dfb8f816b612484e972992c2b7fc1d43" style="width: 100.0%; height: 100.0%;">2018/6/11 下午 11:42:00<br>4.5<br>花蓮縣政府東方  13.1  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_f580b061cf764b0d83d8dce9e55b90a8.setContent(html_dfb8f816b612484e972992c2b7fc1d43);
+            
+
+            marker_59fdd41e402e4c17bad7014508f09ea0.bindPopup(popup_f580b061cf764b0d83d8dce9e55b90a8)
+            ;
+
+            
+        
+    
+        var marker_69de6e470ef64f23a7a8aabddad295fe = L.marker(
+            [23.89, 121.05],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_8d3e5a69c2b54735aba0e94af84befec = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a37401c248734805893f9aeda22d1db5 = $(`<div id="html_a37401c248734805893f9aeda22d1db5" style="width: 100.0%; height: 100.0%;">2018/6/2 上午 10:01:00<br>4.7<br>南投縣政府東方  36.6  公里 (位於南投縣仁愛鄉)</div>`)[0];
+                popup_8d3e5a69c2b54735aba0e94af84befec.setContent(html_a37401c248734805893f9aeda22d1db5);
+            
+
+            marker_69de6e470ef64f23a7a8aabddad295fe.bindPopup(popup_8d3e5a69c2b54735aba0e94af84befec)
+            ;
+
+            
+        
+    
+        var marker_c6c2e17bf23c40bb8253d0ba2e64fe31 = L.marker(
+            [22.86, 121.23],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_b91454d1c731413bb2b44d5fda4a516d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f633147bfe3c4d078cfa61e1a43dc4a8 = $(`<div id="html_f633147bfe3c4d078cfa61e1a43dc4a8" style="width: 100.0%; height: 100.0%;">2018/5/31 上午 09:03:00<br>4.7<br>臺東縣政府東北方  14.0  公里 (位於臺東縣近海)</div>`)[0];
+                popup_b91454d1c731413bb2b44d5fda4a516d.setContent(html_f633147bfe3c4d078cfa61e1a43dc4a8);
+            
+
+            marker_c6c2e17bf23c40bb8253d0ba2e64fe31.bindPopup(popup_b91454d1c731413bb2b44d5fda4a516d)
+            ;
+
+            
+        
+    
+        var marker_2feed13cb8864ee6b93706399289603f = L.marker(
+            [23.86, 121.69],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_38b9f471bc3a416689166cd2aa614cd9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4734970e9f7e414f8c3700588fce6ee2 = $(`<div id="html_4734970e9f7e414f8c3700588fce6ee2" style="width: 100.0%; height: 100.0%;">2018/5/12 下午 12:17:00<br>4.7<br>花蓮縣政府南偏東方  15.8  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_38b9f471bc3a416689166cd2aa614cd9.setContent(html_4734970e9f7e414f8c3700588fce6ee2);
+            
+
+            marker_2feed13cb8864ee6b93706399289603f.bindPopup(popup_38b9f471bc3a416689166cd2aa614cd9)
+            ;
+
+            
+        
+    
+        var marker_c905f00763764b2cb8ef45362bca98a5 = L.marker(
+            [24.02, 122.36],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_167c80ec9e7d4ee2872d4c423a6181ee = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6be42e1d4a744c63aa555353f7a3452b = $(`<div id="html_6be42e1d4a744c63aa555353f7a3452b" style="width: 100.0%; height: 100.0%;">2018/5/2 上午 07:47:00<br>5.5<br>花蓮縣政府東方  75.5  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_167c80ec9e7d4ee2872d4c423a6181ee.setContent(html_6be42e1d4a744c63aa555353f7a3452b);
+            
+
+            marker_c905f00763764b2cb8ef45362bca98a5.bindPopup(popup_167c80ec9e7d4ee2872d4c423a6181ee)
+            ;
+
+            
+        
+    
+        var marker_0041b4c0b33a48caaa39394d99eafe94 = L.marker(
+            [22.34, 120.99],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_7a975b0c13b641ecb724b060414ec536 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_75d16a691e8841259ad098f290661bd9 = $(`<div id="html_75d16a691e8841259ad098f290661bd9" style="width: 100.0%; height: 100.0%;">2018/4/27 下午 01:55:00<br>4.5<br>臺東縣政府南偏西方  48.9  公里 (位於臺東縣近海)</div>`)[0];
+                popup_7a975b0c13b641ecb724b060414ec536.setContent(html_75d16a691e8841259ad098f290661bd9);
+            
+
+            marker_0041b4c0b33a48caaa39394d99eafe94.bindPopup(popup_7a975b0c13b641ecb724b060414ec536)
+            ;
+
+            
+        
+    
+        var marker_af73e298ce464ce0a4b2b78a3eba3230 = L.marker(
+            [22.34, 121.07],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_cc8d02b9c08b4e98a80474cad010c267 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f24cf3e0a72c49a09b22a6ca0ce49cf9 = $(`<div id="html_f24cf3e0a72c49a09b22a6ca0ce49cf9" style="width: 100.0%; height: 100.0%;">2018/4/26 下午 01:46:00<br>4.5<br>臺東縣政府南偏西方  46.6  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_cc8d02b9c08b4e98a80474cad010c267.setContent(html_f24cf3e0a72c49a09b22a6ca0ce49cf9);
+            
+
+            marker_af73e298ce464ce0a4b2b78a3eba3230.bindPopup(popup_cc8d02b9c08b4e98a80474cad010c267)
+            ;
+
+            
+        
+    
+        var marker_6753d0512d7a494e8bfdf291b32a3ca9 = L.marker(
+            [22.36, 121.05],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_de78a94ce88a46e98529a7bd86ae4de2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f7ca396400264f2487c813d7476740dd = $(`<div id="html_f7ca396400264f2487c813d7476740dd" style="width: 100.0%; height: 100.0%;">2018/4/26 下午 01:44:00<br>4.6<br>臺東縣政府南偏西方  44.9  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_de78a94ce88a46e98529a7bd86ae4de2.setContent(html_f7ca396400264f2487c813d7476740dd);
+            
+
+            marker_6753d0512d7a494e8bfdf291b32a3ca9.bindPopup(popup_de78a94ce88a46e98529a7bd86ae4de2)
+            ;
+
+            
+        
+    
+        var marker_3addf8fc9d734d268c95c39b35d569b0 = L.marker(
+            [24.0, 122.43],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_65865284bbe148c696578ba8336ceeff = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8a71d5918ce24d92bad0014d499680c4 = $(`<div id="html_8a71d5918ce24d92bad0014d499680c4" style="width: 100.0%; height: 100.0%;">2018/4/24 上午 01:10:00<br>5.0<br>花蓮縣政府東方  82.6  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_65865284bbe148c696578ba8336ceeff.setContent(html_8a71d5918ce24d92bad0014d499680c4);
+            
+
+            marker_3addf8fc9d734d268c95c39b35d569b0.bindPopup(popup_65865284bbe148c696578ba8336ceeff)
+            ;
+
+            
+        
+    
+        var marker_52bccac4a0ec485ba488b657843e98fb = L.marker(
+            [23.01, 121.7],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_e2bde996877e42ba93c85e59cbe16788 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_45be3b7337ff497a82bb417651a13982 = $(`<div id="html_45be3b7337ff497a82bb417651a13982" style="width: 100.0%; height: 100.0%;">2018/4/21 下午 06:56:00<br>4.7<br>臺東縣政府東偏北方  63.0  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_e2bde996877e42ba93c85e59cbe16788.setContent(html_45be3b7337ff497a82bb417651a13982);
+            
+
+            marker_52bccac4a0ec485ba488b657843e98fb.bindPopup(popup_e2bde996877e42ba93c85e59cbe16788)
+            ;
+
+            
+        
+    
+        var marker_1e6c82edac9647878d00b84939f01a00 = L.marker(
+            [24.37, 122.37],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_a4d78b0a95c24d0ea99b126c0de726dd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_faf490fd1fab49fbb92f8c853cd05a42 = $(`<div id="html_faf490fd1fab49fbb92f8c853cd05a42" style="width: 100.0%; height: 100.0%;">2018/4/20 下午 01:25:00<br>4.7<br>宜蘭縣政府東偏南方  73.7  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_a4d78b0a95c24d0ea99b126c0de726dd.setContent(html_faf490fd1fab49fbb92f8c853cd05a42);
+            
+
+            marker_1e6c82edac9647878d00b84939f01a00.bindPopup(popup_a4d78b0a95c24d0ea99b126c0de726dd)
+            ;
+
+            
+        
+    
+        var marker_49b7caf3364541e38914d9b2171404d1 = L.marker(
+            [23.06, 121.34],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_d1c3d4071d8b44038f51c15637a42f35 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7e739d2fc881436eaa2eec01a6cd73c8 = $(`<div id="html_7e739d2fc881436eaa2eec01a6cd73c8" style="width: 100.0%; height: 100.0%;">2018/4/16 下午 09:48:00<br>4.8<br>臺東縣政府北偏東方  38.6  公里 (位於臺東縣近海)</div>`)[0];
+                popup_d1c3d4071d8b44038f51c15637a42f35.setContent(html_7e739d2fc881436eaa2eec01a6cd73c8);
+            
+
+            marker_49b7caf3364541e38914d9b2171404d1.bindPopup(popup_d1c3d4071d8b44038f51c15637a42f35)
+            ;
+
+            
+        
+    
+        var marker_f54bae01fe9e4affac2d2d5d91184d03 = L.marker(
+            [22.72, 121.67],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_26efdf371e2c4aa1810b76d453554840 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bab7bf05b9014712a4a6edffc53fd809 = $(`<div id="html_bab7bf05b9014712a4a6edffc53fd809" style="width: 100.0%; height: 100.0%;">2018/4/11 下午 03:39:00<br>4.5<br>臺東縣政府東方  53.6  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_26efdf371e2c4aa1810b76d453554840.setContent(html_bab7bf05b9014712a4a6edffc53fd809);
+            
+
+            marker_f54bae01fe9e4affac2d2d5d91184d03.bindPopup(popup_26efdf371e2c4aa1810b76d453554840)
+            ;
+
+            
+        
+    
+        var marker_98a250fba4a2405b868943b322d32828 = L.marker(
+            [23.82, 120.85],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_5ac1a02b2bb641ac84b2855f8a89753b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e8a4bd516e7d4fbbaa7b9e2a9cd5d308 = $(`<div id="html_e8a4bd516e7d4fbbaa7b9e2a9cd5d308" style="width: 100.0%; height: 100.0%;">2018/4/2 上午 12:02:00<br>4.5<br>南投縣政府東偏南方  18.4  公里 (位於南投縣水里鄉)</div>`)[0];
+                popup_5ac1a02b2bb641ac84b2855f8a89753b.setContent(html_e8a4bd516e7d4fbbaa7b9e2a9cd5d308);
+            
+
+            marker_98a250fba4a2405b868943b322d32828.bindPopup(popup_5ac1a02b2bb641ac84b2855f8a89753b)
+            ;
+
+            
+        
+    
+        var marker_4a39ebb35125457babcfa0d2e6866768 = L.marker(
+            [24.0, 121.01],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_b04d8c95d4374c8faf96aae0f46d0b87 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bfccd58f3dea4d8da2cbb22437f799e1 = $(`<div id="html_bfccd58f3dea4d8da2cbb22437f799e1" style="width: 100.0%; height: 100.0%;">2018/3/29 上午 08:17:00<br>5.0<br>南投縣政府東偏北方  34.9  公里 (位於南投縣埔里鎮)</div>`)[0];
+                popup_b04d8c95d4374c8faf96aae0f46d0b87.setContent(html_bfccd58f3dea4d8da2cbb22437f799e1);
+            
+
+            marker_4a39ebb35125457babcfa0d2e6866768.bindPopup(popup_b04d8c95d4374c8faf96aae0f46d0b87)
+            ;
+
+            
+        
+    
+        var marker_b4edf5bf00bb460b811598d18694b90a = L.marker(
+            [24.65, 121.98],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_d93cecbb14dd42f28f4f97eebb278365 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_34bab16eb82a47e5a687aed7f020e765 = $(`<div id="html_34bab16eb82a47e5a687aed7f020e765" style="width: 100.0%; height: 100.0%;">2018/3/28 下午 06:29:00<br>4.9<br>宜蘭縣政府東偏南方  23.4  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_d93cecbb14dd42f28f4f97eebb278365.setContent(html_34bab16eb82a47e5a687aed7f020e765);
+            
+
+            marker_b4edf5bf00bb460b811598d18694b90a.bindPopup(popup_d93cecbb14dd42f28f4f97eebb278365)
+            ;
+
+            
+        
+    
+        var marker_bc09d50b67d74f3287b600959cc4d816 = L.marker(
+            [23.59, 120.62],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_f8481ba7d3bf44c89df626f03a69da0b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_54b34602eb6644dc880f5e9fbe037fe6 = $(`<div id="html_54b34602eb6644dc880f5e9fbe037fe6" style="width: 100.0%; height: 100.0%;">2018/3/22 下午 10:27:00<br>4.7<br>雲林縣政府東南方  15.2  公里 (位於嘉義縣梅山鄉)</div>`)[0];
+                popup_f8481ba7d3bf44c89df626f03a69da0b.setContent(html_54b34602eb6644dc880f5e9fbe037fe6);
+            
+
+            marker_bc09d50b67d74f3287b600959cc4d816.bindPopup(popup_f8481ba7d3bf44c89df626f03a69da0b)
+            ;
+
+            
+        
+    
+        var marker_1999939ed4f74a88a5fc1fcca11b4092 = L.marker(
+            [23.3, 120.54],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_451f6401dd9f49949e251d2b9ef4c6de = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c31991fa5e3e4e58af49081bbdf94e68 = $(`<div id="html_c31991fa5e3e4e58af49081bbdf94e68" style="width: 100.0%; height: 100.0%;">2018/3/20 下午 05:22:00<br>5.3<br>嘉義市政府南偏東方  22.1  公里 (位於嘉義縣大埔鄉)</div>`)[0];
+                popup_451f6401dd9f49949e251d2b9ef4c6de.setContent(html_c31991fa5e3e4e58af49081bbdf94e68);
+            
+
+            marker_1999939ed4f74a88a5fc1fcca11b4092.bindPopup(popup_451f6401dd9f49949e251d2b9ef4c6de)
+            ;
+
+            
+        
+    
+        var marker_3042e3fb2a764f6aaaae4d0d34a6cdda = L.marker(
+            [24.7, 121.86],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_62969be371264229a7b10f40d877b846 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_203772b7e28345f5b8ecc5cb6869e722 = $(`<div id="html_203772b7e28345f5b8ecc5cb6869e722" style="width: 100.0%; height: 100.0%;">2018/3/6 下午 05:42:00<br>4.9<br>宜蘭縣政府東偏南方  10.7  公里 (位於宜蘭縣近海)</div>`)[0];
+                popup_62969be371264229a7b10f40d877b846.setContent(html_203772b7e28345f5b8ecc5cb6869e722);
+            
+
+            marker_3042e3fb2a764f6aaaae4d0d34a6cdda.bindPopup(popup_62969be371264229a7b10f40d877b846)
+            ;
+
+            
+        
+    
+        var marker_7080d773c81c4f07923d5f78e734556c = L.marker(
+            [24.18, 121.71],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_bbe879bad6874e1ba493f085fd3afea1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_00c14b3aeb70449885b56f2811914807 = $(`<div id="html_00c14b3aeb70449885b56f2811914807" style="width: 100.0%; height: 100.0%;">2018/3/4 上午 01:35:00<br>4.9<br>花蓮縣政府北偏東方  22.7  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_bbe879bad6874e1ba493f085fd3afea1.setContent(html_00c14b3aeb70449885b56f2811914807);
+            
+
+            marker_7080d773c81c4f07923d5f78e734556c.bindPopup(popup_bbe879bad6874e1ba493f085fd3afea1)
+            ;
+
+            
+        
+    
+        var marker_6440f61e44c7457694f21df822681f67 = L.marker(
+            [24.32, 122.92],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_c1dd643aa6dc494599f1973d9845baaa = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_345cca22a57a4a00b624858587e4d753 = $(`<div id="html_345cca22a57a4a00b624858587e4d753" style="width: 100.0%; height: 100.0%;">2018/3/2 上午 11:42:00<br>5.3<br>宜蘭縣政府東偏南方  126.4  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_c1dd643aa6dc494599f1973d9845baaa.setContent(html_345cca22a57a4a00b624858587e4d753);
+            
+
+            marker_6440f61e44c7457694f21df822681f67.bindPopup(popup_c1dd643aa6dc494599f1973d9845baaa)
+            ;
+
+            
+        
+    
+        var marker_39075d84f95c47a1b9b25301e56cb2aa = L.marker(
+            [24.42, 123.92],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_b967605a4f57433b9178eb02164e88b1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ccb7106cf996492a8c949f31fd1cc8e8 = $(`<div id="html_ccb7106cf996492a8c949f31fd1cc8e8" style="width: 100.0%; height: 100.0%;">2018/3/1 下午 09:42:00<br>5.8<br>宜蘭縣政府東方  220.6  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_b967605a4f57433b9178eb02164e88b1.setContent(html_ccb7106cf996492a8c949f31fd1cc8e8);
+            
+
+            marker_39075d84f95c47a1b9b25301e56cb2aa.bindPopup(popup_b967605a4f57433b9178eb02164e88b1)
+            ;
+
+            
+        
+    
+        var marker_7cdd18a7faac4dc086aed58ef9d45704 = L.marker(
+            [24.43, 121.9],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_6bbb004ae060499c98f5752b416c2e0a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9ce8c889969d432e9f20da6f7efb32af = $(`<div id="html_9ce8c889969d432e9f20da6f7efb32af" style="width: 100.0%; height: 100.0%;">2018/2/26 上午 02:28:00<br>5.4<br>宜蘭縣政府南偏東方  35.8  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_6bbb004ae060499c98f5752b416c2e0a.setContent(html_9ce8c889969d432e9f20da6f7efb32af);
+            
+
+            marker_7cdd18a7faac4dc086aed58ef9d45704.bindPopup(popup_6bbb004ae060499c98f5752b416c2e0a)
+            ;
+
+            
+        
+    
+        var marker_2907b1c57777432ebf7f6ffb082d15eb = L.marker(
+            [23.41, 121.53],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_e5e48c7034bb4c939c87a153316b5d72 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0dcd2c5ec6b84d5b9b790564ddd90011 = $(`<div id="html_0dcd2c5ec6b84d5b9b790564ddd90011" style="width: 100.0%; height: 100.0%;">2018/2/22 上午 07:10:00<br>5.6<br>花蓮縣政府南方  64.6  公里 (位於臺東縣近海)</div>`)[0];
+                popup_e5e48c7034bb4c939c87a153316b5d72.setContent(html_0dcd2c5ec6b84d5b9b790564ddd90011);
+            
+
+            marker_2907b1c57777432ebf7f6ffb082d15eb.bindPopup(popup_e5e48c7034bb4c939c87a153316b5d72)
+            ;
+
+            
+        
+    
+        var marker_19261a9fabc7477c8ab715b76e156c77 = L.marker(
+            [24.59, 121.61],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_5391dac0851b49deb6262b99dd2a0088 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_072ca01e2a2641e3983139c7ee53c5ba = $(`<div id="html_072ca01e2a2641e3983139c7ee53c5ba" style="width: 100.0%; height: 100.0%;">2018/2/19 下午 10:47:00<br>5.5<br>宜蘭縣政府西南方  21.9  公里 (位於宜蘭縣大同鄉)</div>`)[0];
+                popup_5391dac0851b49deb6262b99dd2a0088.setContent(html_072ca01e2a2641e3983139c7ee53c5ba);
+            
+
+            marker_19261a9fabc7477c8ab715b76e156c77.bindPopup(popup_5391dac0851b49deb6262b99dd2a0088)
+            ;
+
+            
+        
+    
+        var marker_7378f93826ee45109bb29f49f837dec2 = L.marker(
+            [23.86, 121.1],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_de70e414a8c04d73a9426c74ce6b5247 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_de6da753e047456ca00f9f86f30e8e98 = $(`<div id="html_de6da753e047456ca00f9f86f30e8e98" style="width: 100.0%; height: 100.0%;">2018/2/19 上午 03:21:00<br>4.6<br>南投縣政府東方  41.8  公里 (位於南投縣仁愛鄉)</div>`)[0];
+                popup_de70e414a8c04d73a9426c74ce6b5247.setContent(html_de6da753e047456ca00f9f86f30e8e98);
+            
+
+            marker_7378f93826ee45109bb29f49f837dec2.bindPopup(popup_de70e414a8c04d73a9426c74ce6b5247)
+            ;
+
+            
+        
+    
+        var marker_c842b4bd884e4dd79961a5a333202fc7 = L.marker(
+            [22.63, 121.32],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_5ea93eb0077f4a3c8f914a184247ca9f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5349b742a4194c1096d1acf50d4ce472 = $(`<div id="html_5349b742a4194c1096d1acf50d4ce472" style="width: 100.0%; height: 100.0%;">2018/2/17 下午 05:06:00<br>4.5<br>臺東縣政府東南方  22.0  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_5ea93eb0077f4a3c8f914a184247ca9f.setContent(html_5349b742a4194c1096d1acf50d4ce472);
+            
+
+            marker_c842b4bd884e4dd79961a5a333202fc7.bindPopup(popup_5ea93eb0077f4a3c8f914a184247ca9f)
+            ;
+
+            
+        
+    
+        var marker_d89fc4be529f4edbabe4c27a2e81289a = L.marker(
+            [24.23, 121.84],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_76623a7dbed74245973003edc790e4cb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_14e13de40c5d47ffb1cf194e70c80b57 = $(`<div id="html_14e13de40c5d47ffb1cf194e70c80b57" style="width: 100.0%; height: 100.0%;">2018/2/10 下午 03:48:00<br>4.7<br>花蓮縣政府東北方  34.3  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_76623a7dbed74245973003edc790e4cb.setContent(html_14e13de40c5d47ffb1cf194e70c80b57);
+            
+
+            marker_d89fc4be529f4edbabe4c27a2e81289a.bindPopup(popup_76623a7dbed74245973003edc790e4cb)
+            ;
+
+            
+        
+    
+        var marker_a6eca126bcb341619361602514341076 = L.marker(
+            [24.03, 121.81],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_f1f29122c4e44aa8a272d53f528d99f3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c6f9ee49d63e473da058723b96cad29e = $(`<div id="html_c6f9ee49d63e473da058723b96cad29e" style="width: 100.0%; height: 100.0%;">2018/2/10 上午 02:43:00<br>4.7<br>花蓮縣政府東方  20.1  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_f1f29122c4e44aa8a272d53f528d99f3.setContent(html_c6f9ee49d63e473da058723b96cad29e);
+            
+
+            marker_a6eca126bcb341619361602514341076.bindPopup(popup_f1f29122c4e44aa8a272d53f528d99f3)
+            ;
+
+            
+        
+    
+        var marker_456fe4c1304a4de38bee2e7d40f59740 = L.marker(
+            [23.93, 121.6],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_c4b9fc4d83b24988a1270705fa16bfef = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_df673710b1674029b4261500ffb4e976 = $(`<div id="html_df673710b1674029b4261500ffb4e976" style="width: 100.0%; height: 100.0%;">2018/2/9 上午 10:14:00<br>4.7<br>花蓮縣政府南偏西方  7.4  公里 (位於花蓮縣壽豐鄉)</div>`)[0];
+                popup_c4b9fc4d83b24988a1270705fa16bfef.setContent(html_df673710b1674029b4261500ffb4e976);
+            
+
+            marker_456fe4c1304a4de38bee2e7d40f59740.bindPopup(popup_c4b9fc4d83b24988a1270705fa16bfef)
+            ;
+
+            
+        
+    
+        var marker_40938003d0f04388a0f42b541ec67d5a = L.marker(
+            [23.96, 121.6],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_80d7efa6cd6545b4b34416cf31b23e5e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_74b00224307b41d489494c206245d746 = $(`<div id="html_74b00224307b41d489494c206245d746" style="width: 100.0%; height: 100.0%;">2018/2/8 上午 11:06:00<br>4.8<br>花蓮縣政府南偏西方  4.0  公里 (位於花蓮縣吉安鄉)</div>`)[0];
+                popup_80d7efa6cd6545b4b34416cf31b23e5e.setContent(html_74b00224307b41d489494c206245d746);
+            
+
+            marker_40938003d0f04388a0f42b541ec67d5a.bindPopup(popup_80d7efa6cd6545b4b34416cf31b23e5e)
+            ;
+
+            
+        
+    
+        var marker_b88452c37f1f4b8b8d31fa3f799d5a5c = L.marker(
+            [23.97, 121.58],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_56d5bddebfe74f90a42cdc2d84af3aca = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_273d313811724195854eebe2f7975b9b = $(`<div id="html_273d313811724195854eebe2f7975b9b" style="width: 100.0%; height: 100.0%;">2018/2/8 上午 08:54:00<br>5.0<br>花蓮縣政府西偏南方  4.7  公里 (位於花蓮縣吉安鄉)</div>`)[0];
+                popup_56d5bddebfe74f90a42cdc2d84af3aca.setContent(html_273d313811724195854eebe2f7975b9b);
+            
+
+            marker_b88452c37f1f4b8b8d31fa3f799d5a5c.bindPopup(popup_56d5bddebfe74f90a42cdc2d84af3aca)
+            ;
+
+            
+        
+    
+        var marker_bc928f6059d647e28490be7efb402794 = L.marker(
+            [24.08, 121.78],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_da97f53d23e740c88df77cd7319f5eae = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_078f42f1e2814ffeb5b7f65c505397d9 = $(`<div id="html_078f42f1e2814ffeb5b7f65c505397d9" style="width: 100.0%; height: 100.0%;">2018/2/7 下午 11:21:00<br>5.8<br>花蓮縣政府東偏北方  18.9  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_da97f53d23e740c88df77cd7319f5eae.setContent(html_078f42f1e2814ffeb5b7f65c505397d9);
+            
+
+            marker_bc928f6059d647e28490be7efb402794.bindPopup(popup_da97f53d23e740c88df77cd7319f5eae)
+            ;
+
+            
+        
+    
+        var marker_e485ed61495b4199a22e650f8dd5170a = L.marker(
+            [23.96, 121.77],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_9fddf93113f8465dada22754103d889f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0dcf5aed8ecd4f1b96e9cec55c3d2524 = $(`<div id="html_0dcf5aed8ecd4f1b96e9cec55c3d2524" style="width: 100.0%; height: 100.0%;">2018/2/7 下午 10:19:00<br>4.6<br>花蓮縣政府東方  15.3  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_9fddf93113f8465dada22754103d889f.setContent(html_0dcf5aed8ecd4f1b96e9cec55c3d2524);
+            
+
+            marker_e485ed61495b4199a22e650f8dd5170a.bindPopup(popup_9fddf93113f8465dada22754103d889f)
+            ;
+
+            
+        
+    
+        var marker_4e2be44fc9fa4ac88c5243ab25a770e7 = L.marker(
+            [24.09, 121.74],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_b339bd17f731431c9be1eaff1f2b078a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_01344f7ce4b14c05aec8e010c9a24463 = $(`<div id="html_01344f7ce4b14c05aec8e010c9a24463" style="width: 100.0%; height: 100.0%;">2018/2/7 下午 09:08:00<br>4.5<br>花蓮縣政府東北方  16.5  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_b339bd17f731431c9be1eaff1f2b078a.setContent(html_01344f7ce4b14c05aec8e010c9a24463);
+            
+
+            marker_4e2be44fc9fa4ac88c5243ab25a770e7.bindPopup(popup_b339bd17f731431c9be1eaff1f2b078a)
+            ;
+
+            
+        
+    
+        var marker_7bf0cad7b39d4b2ca954b95fbc2a281e = L.marker(
+            [24.08, 121.77],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_dc673d156128487d8793e5bc6681f12d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_299fb23a6451400086d3da644a78dbf1 = $(`<div id="html_299fb23a6451400086d3da644a78dbf1" style="width: 100.0%; height: 100.0%;">2018/2/7 下午 09:06:00<br>5.1<br>花蓮縣政府東偏北方  18.2  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_dc673d156128487d8793e5bc6681f12d.setContent(html_299fb23a6451400086d3da644a78dbf1);
+            
+
+            marker_7bf0cad7b39d4b2ca954b95fbc2a281e.bindPopup(popup_dc673d156128487d8793e5bc6681f12d)
+            ;
+
+            
+        
+    
+        var marker_30c77ce6c0c941fc8919cc1e0ce4880c = L.marker(
+            [24.0, 121.73],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_0919d5f4326b417382a2cf8422b7f7a6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9cca3449450044319b37b5ab29a4f4ce = $(`<div id="html_9cca3449450044319b37b5ab29a4f4ce" style="width: 100.0%; height: 100.0%;">2018/2/7 下午 07:13:00<br>5.0<br>花蓮縣政府東方  11.2  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_0919d5f4326b417382a2cf8422b7f7a6.setContent(html_9cca3449450044319b37b5ab29a4f4ce);
+            
+
+            marker_30c77ce6c0c941fc8919cc1e0ce4880c.bindPopup(popup_0919d5f4326b417382a2cf8422b7f7a6)
+            ;
+
+            
+        
+    
+        var marker_b07994c960ac4c78be7b743e7c93cb70 = L.marker(
+            [24.21, 121.67],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_1b3dab3f11ca471792a616f201969124 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b9d47aab8a704683be4f936fd1cef7dd = $(`<div id="html_b9d47aab8a704683be4f936fd1cef7dd" style="width: 100.0%; height: 100.0%;">2018/2/7 下午 06:19:00<br>4.5<br>花蓮縣政府北偏東方  25.3  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_1b3dab3f11ca471792a616f201969124.setContent(html_b9d47aab8a704683be4f936fd1cef7dd);
+            
+
+            marker_b07994c960ac4c78be7b743e7c93cb70.bindPopup(popup_1b3dab3f11ca471792a616f201969124)
+            ;
+
+            
+        
+    
+        var marker_e71d28da7c0a4177ba55c3a7209ce336 = L.marker(
+            [24.08, 121.74],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_69302353f66b45658ebd75459ccbeb7a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a006469dcac140058a8fcb6845c12dbb = $(`<div id="html_a006469dcac140058a8fcb6845c12dbb" style="width: 100.0%; height: 100.0%;">2018/2/7 上午 11:36:00<br>5.1<br>花蓮縣政府東北方  15.6  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_69302353f66b45658ebd75459ccbeb7a.setContent(html_a006469dcac140058a8fcb6845c12dbb);
+            
+
+            marker_e71d28da7c0a4177ba55c3a7209ce336.bindPopup(popup_69302353f66b45658ebd75459ccbeb7a)
+            ;
+
+            
+        
+    
+        var marker_a019f67514cb4e399982845575bb196b = L.marker(
+            [24.07, 121.72],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_dfd2ceb942ba43d89c7a030e00340b5c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_209ff6131d7b4ebc8d188acc3cf01571 = $(`<div id="html_209ff6131d7b4ebc8d188acc3cf01571" style="width: 100.0%; height: 100.0%;">2018/2/7 上午 10:18:00<br>4.9<br>花蓮縣政府東北方  13.5  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_dfd2ceb942ba43d89c7a030e00340b5c.setContent(html_209ff6131d7b4ebc8d188acc3cf01571);
+            
+
+            marker_a019f67514cb4e399982845575bb196b.bindPopup(popup_dfd2ceb942ba43d89c7a030e00340b5c)
+            ;
+
+            
+        
+    
+        var marker_d6066f8d9ef241419b35804a9b2fd9e4 = L.marker(
+            [24.03, 121.65],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_155a3dd1e157491ba9f08cb8ba60dd3c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6f396fab3ab748bc8d2dfd8a850fc65b = $(`<div id="html_6f396fab3ab748bc8d2dfd8a850fc65b" style="width: 100.0%; height: 100.0%;">2018/2/7 上午 07:43:00<br>4.9<br>花蓮縣政府東北方  5.2  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_155a3dd1e157491ba9f08cb8ba60dd3c.setContent(html_6f396fab3ab748bc8d2dfd8a850fc65b);
+            
+
+            marker_d6066f8d9ef241419b35804a9b2fd9e4.bindPopup(popup_155a3dd1e157491ba9f08cb8ba60dd3c)
+            ;
+
+            
+        
+    
+        var marker_48b15c3a72a5406f8327f6e8220807c6 = L.marker(
+            [24.06, 121.71],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_aea12ec407ba4e4fad2b13aa0cb07224 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_90ba59c77a704e8385931e4cf2a302e5 = $(`<div id="html_90ba59c77a704e8385931e4cf2a302e5" style="width: 100.0%; height: 100.0%;">2018/2/7 上午 07:11:00<br>4.8<br>花蓮縣政府東北方  12.1  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_aea12ec407ba4e4fad2b13aa0cb07224.setContent(html_90ba59c77a704e8385931e4cf2a302e5);
+            
+
+            marker_48b15c3a72a5406f8327f6e8220807c6.bindPopup(popup_aea12ec407ba4e4fad2b13aa0cb07224)
+            ;
+
+            
+        
+    
+        var marker_1301596db715498e896d5beb00c27035 = L.marker(
+            [24.06, 121.68],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_436ea6fda4df4507ac176d22aee1d5a4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6fc67f0fed7e488c9dbe6f496b77f463 = $(`<div id="html_6fc67f0fed7e488c9dbe6f496b77f463" style="width: 100.0%; height: 100.0%;">2018/2/7 上午 04:56:00<br>4.9<br>花蓮縣政府東北方  9.7  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_436ea6fda4df4507ac176d22aee1d5a4.setContent(html_6fc67f0fed7e488c9dbe6f496b77f463);
+            
+
+            marker_1301596db715498e896d5beb00c27035.bindPopup(popup_436ea6fda4df4507ac176d22aee1d5a4)
+            ;
+
+            
+        
+    
+        var marker_08ffebd2eb4e4f92ae64c3e0ce220da4 = L.marker(
+            [24.0, 121.72],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_c51005e5a3fc4299b8c99e4891aa354e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_92f97767e67d44a492ad952946845649 = $(`<div id="html_92f97767e67d44a492ad952946845649" style="width: 100.0%; height: 100.0%;">2018/2/7 上午 03:36:00<br>4.8<br>花蓮縣政府東方  9.9  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_c51005e5a3fc4299b8c99e4891aa354e.setContent(html_92f97767e67d44a492ad952946845649);
+            
+
+            marker_08ffebd2eb4e4f92ae64c3e0ce220da4.bindPopup(popup_c51005e5a3fc4299b8c99e4891aa354e)
+            ;
+
+            
+        
+    
+        var marker_f49164a199154a6ea0901778c4ce1b43 = L.marker(
+            [24.01, 121.73],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_f69b388a96e145128dba81b40d6674de = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ebc08dcb54bb4b8787b9acfaaa162ecb = $(`<div id="html_ebc08dcb54bb4b8787b9acfaaa162ecb" style="width: 100.0%; height: 100.0%;">2018/2/7 上午 03:15:00<br>5.4<br>花蓮縣政府東方  11.1  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_f69b388a96e145128dba81b40d6674de.setContent(html_ebc08dcb54bb4b8787b9acfaaa162ecb);
+            
+
+            marker_f49164a199154a6ea0901778c4ce1b43.bindPopup(popup_f69b388a96e145128dba81b40d6674de)
+            ;
+
+            
+        
+    
+        var marker_c7b095e5ec7f482ab242fcc4402e29d8 = L.marker(
+            [24.04, 121.71],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_5081bf90fd5b4157b4dedac597b81d9f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6cefffd5ab41430aa0427a24e167f538 = $(`<div id="html_6cefffd5ab41430aa0427a24e167f538" style="width: 100.0%; height: 100.0%;">2018/2/7 上午 02:07:00<br>5.3<br>花蓮縣政府東偏北方  10.6  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_5081bf90fd5b4157b4dedac597b81d9f.setContent(html_6cefffd5ab41430aa0427a24e167f538);
+            
+
+            marker_c7b095e5ec7f482ab242fcc4402e29d8.bindPopup(popup_5081bf90fd5b4157b4dedac597b81d9f)
+            ;
+
+            
+        
+    
+        var marker_2f956ae1d6f240469b96d7f162d9246d = L.marker(
+            [24.12, 121.73],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_25835fbbe0464572b3294189c0fee81a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c2153686f37e40c2a2ba58073ddade8a = $(`<div id="html_c2153686f37e40c2a2ba58073ddade8a" style="width: 100.0%; height: 100.0%;">2018/2/7 上午 02:00:00<br>5.3<br>花蓮縣政府東北方  17.7  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_25835fbbe0464572b3294189c0fee81a.setContent(html_c2153686f37e40c2a2ba58073ddade8a);
+            
+
+            marker_2f956ae1d6f240469b96d7f162d9246d.bindPopup(popup_25835fbbe0464572b3294189c0fee81a)
+            ;
+
+            
+        
+    
+        var marker_cf31825c31f6400f96be8724b3a90379 = L.marker(
+            [23.99, 121.61],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_e92f35f84a7043ffacf3a7571ee1976b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_eb490e4e0e814dc5baec558e5e8111b9 = $(`<div id="html_eb490e4e0e814dc5baec558e5e8111b9" style="width: 100.0%; height: 100.0%;">2018/2/7 上午 12:17:00<br>4.9<br>花蓮縣政府西偏南方  .8  公里 (位於花蓮縣花蓮市)</div>`)[0];
+                popup_e92f35f84a7043ffacf3a7571ee1976b.setContent(html_eb490e4e0e814dc5baec558e5e8111b9);
+            
+
+            marker_cf31825c31f6400f96be8724b3a90379.bindPopup(popup_e92f35f84a7043ffacf3a7571ee1976b)
+            ;
+
+            
+        
+    
+        var marker_77b32a036af44c82a43ed39af40052ba = L.marker(
+            [24.0, 121.62],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_4960c0f98532452db1fe1413fc9c99db = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bdc3b8d633734ba0896eb49b6999720c = $(`<div id="html_bdc3b8d633734ba0896eb49b6999720c" style="width: 100.0%; height: 100.0%;">2018/2/6 下午 11:54:00<br>4.5<br>花蓮縣政府北偏東方  1.1  公里 (位於花蓮縣花蓮市)</div>`)[0];
+                popup_4960c0f98532452db1fe1413fc9c99db.setContent(html_bdc3b8d633734ba0896eb49b6999720c);
+            
+
+            marker_77b32a036af44c82a43ed39af40052ba.bindPopup(popup_4960c0f98532452db1fe1413fc9c99db)
+            ;
+
+            
+        
+    
+        var marker_bfab80023c8d4c22852b1a7f0266a1fd = L.marker(
+            [23.96, 121.6],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_52c0a114de2a425a807816acad7b9c1a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_10c246593d474f22b89333bf4f433d4c = $(`<div id="html_10c246593d474f22b89333bf4f433d4c" style="width: 100.0%; height: 100.0%;">2018/2/6 下午 11:53:00<br>4.9<br>花蓮縣政府西南方  3.9  公里 (位於花蓮縣吉安鄉)</div>`)[0];
+                popup_52c0a114de2a425a807816acad7b9c1a.setContent(html_10c246593d474f22b89333bf4f433d4c);
+            
+
+            marker_bfab80023c8d4c22852b1a7f0266a1fd.bindPopup(popup_52c0a114de2a425a807816acad7b9c1a)
+            ;
+
+            
+        
+    
+        var marker_23ab1c7680a44fb282da3b8d2803dd88 = L.marker(
+            [24.1, 121.73],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_8f3b29c8255d4bd58fd3417412d70857 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e6a0d2aef82b4ffaa9022b9a38fee57e = $(`<div id="html_e6a0d2aef82b4ffaa9022b9a38fee57e" style="width: 100.0%; height: 100.0%;">2018/2/6 下午 11:50:00<br>6.2<br>花蓮縣政府東北方  16.5  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_8f3b29c8255d4bd58fd3417412d70857.setContent(html_e6a0d2aef82b4ffaa9022b9a38fee57e);
+            
+
+            marker_23ab1c7680a44fb282da3b8d2803dd88.bindPopup(popup_8f3b29c8255d4bd58fd3417412d70857)
+            ;
+
+            
+        
+    
+        var marker_109a92456ad24be680c674cf301e8f1e = L.marker(
+            [24.08, 121.77],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_a7a962008e194ca8a8ae258b5a7ab5d5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4601841ab65b447289bf6c24082136b4 = $(`<div id="html_4601841ab65b447289bf6c24082136b4" style="width: 100.0%; height: 100.0%;">2018/2/6 下午 04:36:00<br>4.5<br>花蓮縣政府東偏北方  18.4  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_a7a962008e194ca8a8ae258b5a7ab5d5.setContent(html_4601841ab65b447289bf6c24082136b4);
+            
+
+            marker_109a92456ad24be680c674cf301e8f1e.bindPopup(popup_a7a962008e194ca8a8ae258b5a7ab5d5)
+            ;
+
+            
+        
+    
+        var marker_97a238a6a8bc4cd8a28a048fdc4d86b8 = L.marker(
+            [24.19, 121.72],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_88f87449c1a24c8c8aec3213edae43c5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_80ca8565de6746cba73fb077842c0545 = $(`<div id="html_80ca8565de6746cba73fb077842c0545" style="width: 100.0%; height: 100.0%;">2018/2/6 下午 01:09:00<br>5.0<br>花蓮縣政府北偏東方  23.8  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_88f87449c1a24c8c8aec3213edae43c5.setContent(html_80ca8565de6746cba73fb077842c0545);
+            
+
+            marker_97a238a6a8bc4cd8a28a048fdc4d86b8.bindPopup(popup_88f87449c1a24c8c8aec3213edae43c5)
+            ;
+
+            
+        
+    
+        var marker_fdd5037a342e45eda4ed7d52eec75ce2 = L.marker(
+            [24.15, 121.81],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_e1163a5a48f94514a1f4813284cada69 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8488ce71b08d42ae9a49be05660e709b = $(`<div id="html_8488ce71b08d42ae9a49be05660e709b" style="width: 100.0%; height: 100.0%;">2018/2/6 上午 01:37:00<br>4.6<br>花蓮縣政府東北方  26.3  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_e1163a5a48f94514a1f4813284cada69.setContent(html_8488ce71b08d42ae9a49be05660e709b);
+            
+
+            marker_fdd5037a342e45eda4ed7d52eec75ce2.bindPopup(popup_e1163a5a48f94514a1f4813284cada69)
+            ;
+
+            
+        
+    
+        var marker_1db9166802c24739a7891759392e9db7 = L.marker(
+            [24.11, 121.74],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_86194decfee242df9730e9d0d15c6e3d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1301d1b4eedc4c4a8eb2660eb8180993 = $(`<div id="html_1301d1b4eedc4c4a8eb2660eb8180993" style="width: 100.0%; height: 100.0%;">2018/2/5 下午 11:58:00<br>5.0<br>花蓮縣政府東北方  17.3  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_86194decfee242df9730e9d0d15c6e3d.setContent(html_1301d1b4eedc4c4a8eb2660eb8180993);
+            
+
+            marker_1db9166802c24739a7891759392e9db7.bindPopup(popup_86194decfee242df9730e9d0d15c6e3d)
+            ;
+
+            
+        
+    
+        var marker_d1851adb64cb40a6b10d481cfc504e92 = L.marker(
+            [24.1, 121.74],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_5638d223e7a4474986adcb255b4d6453 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5408676bbcec4b79a17f836876787456 = $(`<div id="html_5408676bbcec4b79a17f836876787456" style="width: 100.0%; height: 100.0%;">2018/2/5 下午 05:44:00<br>4.5<br>花蓮縣政府東北方  17.3  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_5638d223e7a4474986adcb255b4d6453.setContent(html_5408676bbcec4b79a17f836876787456);
+            
+
+            marker_d1851adb64cb40a6b10d481cfc504e92.bindPopup(popup_5638d223e7a4474986adcb255b4d6453)
+            ;
+
+            
+        
+    
+        var marker_e33ab4551fa6435594fe7c2638062d9a = L.marker(
+            [24.14, 121.78],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_dc66476515e74dbe9e500fb7c610a3a8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0c20be2432ff41f9a1417fd581004c91 = $(`<div id="html_0c20be2432ff41f9a1417fd581004c91" style="width: 100.0%; height: 100.0%;">2018/2/5 下午 05:06:00<br>4.5<br>花蓮縣政府東北方  23.1  公里 (位於臺灣東部海域)</div>`)[0];
+                popup_dc66476515e74dbe9e500fb7c610a3a8.setContent(html_0c20be2432ff41f9a1417fd581004c91);
+            
+
+            marker_e33ab4551fa6435594fe7c2638062d9a.bindPopup(popup_dc66476515e74dbe9e500fb7c610a3a8)
+            ;
+
+            
+        
+    
+        var marker_f8b0460ae94445c1ad2c67044152fbeb = L.marker(
+            [24.26, 121.8],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_3a899f89723448acbc7f29e90e3e84d4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1a3f053f9045443585646dd22a78c431 = $(`<div id="html_1a3f053f9045443585646dd22a78c431" style="width: 100.0%; height: 100.0%;">2018/2/5 上午 12:54:00<br>4.5<br>花蓮縣政府北偏東方  35.1  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_3a899f89723448acbc7f29e90e3e84d4.setContent(html_1a3f053f9045443585646dd22a78c431);
+            
+
+            marker_f8b0460ae94445c1ad2c67044152fbeb.bindPopup(popup_3a899f89723448acbc7f29e90e3e84d4)
+            ;
+
+            
+        
+    
+        var marker_39bdeac20f8d4145a60d20a0bcd8f2a7 = L.marker(
+            [24.23, 121.75],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_a6a6eaec19ff4726933c5a47bed71f73 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_555f00a046ed422aa0fd010640121c99 = $(`<div id="html_555f00a046ed422aa0fd010640121c99" style="width: 100.0%; height: 100.0%;">2018/2/4 下午 11:33:00<br>4.6<br>花蓮縣政府北偏東方  28.9  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_a6a6eaec19ff4726933c5a47bed71f73.setContent(html_555f00a046ed422aa0fd010640121c99);
+            
+
+            marker_39bdeac20f8d4145a60d20a0bcd8f2a7.bindPopup(popup_a6a6eaec19ff4726933c5a47bed71f73)
+            ;
+
+            
+        
+    
+        var marker_bdec76fb419f4242a9984d0c9cabb690 = L.marker(
+            [24.18, 121.68],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_646109d76e96427aa3718f51be7778b1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_48210ab377904930a0baee7ba53a367c = $(`<div id="html_48210ab377904930a0baee7ba53a367c" style="width: 100.0%; height: 100.0%;">2018/2/4 下午 10:16:00<br>4.9<br>花蓮縣政府北偏東方  21.5  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_646109d76e96427aa3718f51be7778b1.setContent(html_48210ab377904930a0baee7ba53a367c);
+            
+
+            marker_bdec76fb419f4242a9984d0c9cabb690.bindPopup(popup_646109d76e96427aa3718f51be7778b1)
+            ;
+
+            
+        
+    
+        var marker_a3fa228385a642d385db5ee8b2fd7b7a = L.marker(
+            [24.15, 121.72],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_a2e92eef545948e7b282f8cd9d64066d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b7babc4b1ace4a838f134a8f8b16cbc1 = $(`<div id="html_b7babc4b1ace4a838f134a8f8b16cbc1" style="width: 100.0%; height: 100.0%;">2018/2/4 下午 10:13:00<br>5.5<br>花蓮縣政府北偏東方  20.2  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_a2e92eef545948e7b282f8cd9d64066d.setContent(html_b7babc4b1ace4a838f134a8f8b16cbc1);
+            
+
+            marker_a3fa228385a642d385db5ee8b2fd7b7a.bindPopup(popup_a2e92eef545948e7b282f8cd9d64066d)
+            ;
+
+            
+        
+    
+        var marker_a0f0ce3b18614778a2652740b9f969c4 = L.marker(
+            [24.23, 121.73],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_08c832baf9304f25b6e4f9c4b701598e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0db712d61ee1430382650884fe780cbb = $(`<div id="html_0db712d61ee1430382650884fe780cbb" style="width: 100.0%; height: 100.0%;">2018/2/4 下午 10:12:00<br>4.7<br>花蓮縣政府北偏東方  28.6  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_08c832baf9304f25b6e4f9c4b701598e.setContent(html_0db712d61ee1430382650884fe780cbb);
+            
+
+            marker_a0f0ce3b18614778a2652740b9f969c4.bindPopup(popup_08c832baf9304f25b6e4f9c4b701598e)
+            ;
+
+            
+        
+    
+        var marker_abb3d5a81b1549fe957b7309b621206b = L.marker(
+            [24.23, 121.69],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_9a2fc868828f4bc5b749581c0f45e8cf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_04ecabc41aee4d25ad44fb93f2505113 = $(`<div id="html_04ecabc41aee4d25ad44fb93f2505113" style="width: 100.0%; height: 100.0%;">2018/2/4 下午 10:10:00<br>4.9<br>花蓮縣政府北偏東方  27.5  公里 (位於花蓮縣秀林鄉)</div>`)[0];
+                popup_9a2fc868828f4bc5b749581c0f45e8cf.setContent(html_04ecabc41aee4d25ad44fb93f2505113);
+            
+
+            marker_abb3d5a81b1549fe957b7309b621206b.bindPopup(popup_9a2fc868828f4bc5b749581c0f45e8cf)
+            ;
+
+            
+        
+    
+        var marker_a58b10a6e5f243d0943373e9c22ff06b = L.marker(
+            [24.28, 121.77],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_35899652713a4139a476a43f2cbcb673 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_209047e4e099447195d8ed61e3d25f5e = $(`<div id="html_209047e4e099447195d8ed61e3d25f5e" style="width: 100.0%; height: 100.0%;">2018/2/4 下午 10:05:00<br>4.6<br>花蓮縣政府北偏東方  35.7  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_35899652713a4139a476a43f2cbcb673.setContent(html_209047e4e099447195d8ed61e3d25f5e);
+            
+
+            marker_a58b10a6e5f243d0943373e9c22ff06b.bindPopup(popup_35899652713a4139a476a43f2cbcb673)
+            ;
+
+            
+        
+    
+        var marker_b9a655eedd73413985aef27fe6b1ff61 = L.marker(
+            [24.17, 121.71],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_00406af14a164e009fc8e52a90b09662 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bd113818fa5c4750ba4bb2ed2bc915dc = $(`<div id="html_bd113818fa5c4750ba4bb2ed2bc915dc" style="width: 100.0%; height: 100.0%;">2018/2/4 下午 09:57:00<br>5.2<br>花蓮縣政府北偏東方  21.9  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_00406af14a164e009fc8e52a90b09662.setContent(html_bd113818fa5c4750ba4bb2ed2bc915dc);
+            
+
+            marker_b9a655eedd73413985aef27fe6b1ff61.bindPopup(popup_00406af14a164e009fc8e52a90b09662)
+            ;
+
+            
+        
+    
+        var marker_af08e60d8ea14a75897cefda91182ae9 = L.marker(
+            [24.15, 121.74],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_c1379df645a84722b9fde364e5a306e3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_99ef9d5a9fda470bb1f6f3f481c109fd = $(`<div id="html_99ef9d5a9fda470bb1f6f3f481c109fd" style="width: 100.0%; height: 100.0%;">2018/2/4 下午 09:56:00<br>5.8<br>花蓮縣政府東北方  21.7  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_c1379df645a84722b9fde364e5a306e3.setContent(html_99ef9d5a9fda470bb1f6f3f481c109fd);
+            
+
+            marker_af08e60d8ea14a75897cefda91182ae9.bindPopup(popup_c1379df645a84722b9fde364e5a306e3)
+            ;
+
+            
+        
+    
+        var marker_cf7b8ca8147441e1a40611eadc27cf4e = L.marker(
+            [24.21, 121.7],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_bfc743f9201041d683a94f5af0901006 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fbbb57738229444ca14069bb55c8c192 = $(`<div id="html_fbbb57738229444ca14069bb55c8c192" style="width: 100.0%; height: 100.0%;">2018/2/4 下午 09:12:00<br>5.3<br>花蓮縣政府北偏東方  25.1  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_bfc743f9201041d683a94f5af0901006.setContent(html_fbbb57738229444ca14069bb55c8c192);
+            
+
+            marker_cf7b8ca8147441e1a40611eadc27cf4e.bindPopup(popup_bfc743f9201041d683a94f5af0901006)
+            ;
+
+            
+        
+    
+        var marker_ec1cebc5f4c647f0b5d042e0fe2800ca = L.marker(
+            [24.18, 121.7],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_1395a85fe6e347a0bebb41062e44020d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1cf8d475538d4cc5b2146368c24c54c1 = $(`<div id="html_1cf8d475538d4cc5b2146368c24c54c1" style="width: 100.0%; height: 100.0%;">2018/2/4 上午 03:30:00<br>4.7<br>花蓮縣政府北偏東方  22.7  公里 (位於花蓮縣近海)</div>`)[0];
+                popup_1395a85fe6e347a0bebb41062e44020d.setContent(html_1cf8d475538d4cc5b2146368c24c54c1);
+            
+
+            marker_ec1cebc5f4c647f0b5d042e0fe2800ca.bindPopup(popup_1395a85fe6e347a0bebb41062e44020d)
+            ;
+
+            
+        
+    
+        var marker_c0551ec18d4f421981bc6dfa562f7684 = L.marker(
+            [22.97, 120.99],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_beb7e7f4445e48318c091f4571ac12a4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_722d82025e57425aadbc7dd680c05069 = $(`<div id="html_722d82025e57425aadbc7dd680c05069" style="width: 100.0%; height: 100.0%;">2018/1/27 上午 12:31:00<br>4.5<br>臺東縣政府西北方  28.9  公里 (位於臺東縣延平鄉)</div>`)[0];
+                popup_beb7e7f4445e48318c091f4571ac12a4.setContent(html_722d82025e57425aadbc7dd680c05069);
+            
+
+            marker_c0551ec18d4f421981bc6dfa562f7684.bindPopup(popup_beb7e7f4445e48318c091f4571ac12a4)
+            ;
+
+            
+        
+    
+        var marker_2defa4c1265c4827bd261897a8509eca = L.marker(
+            [25.06, 121.72],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(marker_cluster_c8d0cc8c5fbb413eb43f61b771243f7b);
+        
+    
+            var popup_817207c44cc145d6a2dc91091101a30c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_463935f6607342b0bc580edfd68f7b80 = $(`<div id="html_463935f6607342b0bc580edfd68f7b80" style="width: 100.0%; height: 100.0%;">2018/1/17 下午 01:59:00<br>5.5<br>基隆市政府南偏西方  8.5  公里 (位於基隆市暖暖區)</div>`)[0];
+                popup_817207c44cc145d6a2dc91091101a30c.setContent(html_463935f6607342b0bc580edfd68f7b80);
+            
+
+            marker_2defa4c1265c4827bd261897a8509eca.bindPopup(popup_817207c44cc145d6a2dc91091101a30c)
+            ;
+
+            
+        
+</script>
